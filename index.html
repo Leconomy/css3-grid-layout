@@ -1569,22 +1569,22 @@ grid-template-columns: repeat(4, 10px [col-start] 250px [col-end]) 10px;
                 </tr>
             </tbody>
         </table>
-        <p>The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template③">grid-template</a> property is a <a data-link-type="dfn" href="https://www.w3.org/TR/css-cascade-4/#shorthand-property" id="ref-for-shorthand-property①">shorthand</a> for setting <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①④">grid-template-columns</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①③">grid-template-rows</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①③">grid-template-areas</a> in a single declaration. It has several distinct syntax forms:</p>
+        <p><a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template③">grid-template</a> 属性是设置<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①④">grid-template-columns</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①③">grid-template-rows</a>, 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①③">grid-template-areas</a>的简写属性.它有以下几种不同的语法形式:</p>
         <dl>
             <dt>
                 <dfn class="css" data-dfn-for="grid-template" data-dfn-type="value" data-export="" id="valdef-grid-template-none">none<a class="self-link" href="/grid/#valdef-grid-template-none"></a></dfn>
             </dt>
-            <dd> Sets all three properties to their initial values (<a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-rows-none" id="ref-for-valdef-grid-template-rows-none">none</a>).
+            <dd> 将所有三个属性设置为它们的初始值 (<a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-rows-none" id="ref-for-valdef-grid-template-rows-none">none</a>).
             </dd>
             <dt>
                 <dfn class="css" data-dfn-for="grid-template" data-dfn-type="value" data-export="" id="grid-template-rowcol"><a class="production" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①④">&lt;‘grid-template-rows’&gt;</a> / <a class="production" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑤">&lt;‘grid-template-columns’&gt;</a><a class="self-link" href="/grid/#grid-template-rowcol"></a></dfn>
             </dt>
             <dd>
-                Sets <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑤">grid-template-rows</a> and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑥">grid-template-columns</a> to the specified values, respectively, and sets <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①④">grid-template-areas</a> to <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-areas-none" id="ref-for-valdef-grid-template-areas-none">none</a>.
+                分别设置 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑤">grid-template-rows</a> 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑥">grid-template-columns</a> 为指定的值, 并且设置 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①④">grid-template-areas</a> 为 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-areas-none" id="ref-for-valdef-grid-template-areas-none">none</a>.
                 <div class="example" id="example-3c3618b0">
                     <a class="self-link" href="/grid/#example-3c3618b0"></a>
                     <pre>grid-template: auto 1fr / auto 1fr auto;</pre>
-                    <p>is equivalent to</p>
+                    <p>等同于</p>
                     <pre>grid-template-rows: auto 1fr;
 grid-template-columns: auto 1fr auto;
 grid-template-areas: none;
@@ -1597,29 +1597,29 @@ grid-template-areas: none;
             <dd>
                 <ul>
                     <li data-md="">
-                        <p>Sets <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑤">grid-template-areas</a> to the strings listed.</p>
+                        <p>设置 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑤">grid-template-areas</a> 为列出的字符串.</p>
                     </li>
                     <li data-md="">
-                        <p>Sets <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑥">grid-template-rows</a> to the <a class="production css" data-link-type="type" href="/grid/#typedef-track-size" id="ref-for-typedef-track-size⑥">&lt;track-size&gt;</a>s following each string (filling in <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-columns-auto" id="ref-for-valdef-grid-template-columns-auto⑨">auto</a> for any missing sizes), and splicing in the named lines defined before/after each size.</p>
+                        <p>设置 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑥">grid-template-rows</a> 为每个字符串后面的 <a class="production css" data-link-type="type" href="/grid/#typedef-track-size" id="ref-for-typedef-track-size⑥">&lt;track-size&gt;</a> (缺失设置为 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-columns-auto" id="ref-for-valdef-grid-template-columns-auto⑨">auto</a>), 并在每个尺寸之前/之后定义的命名线中进行拼接.</p>
                     </li>
                     <li data-md="">
-                        <p>Sets <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑦">grid-template-columns</a> to the track listing specified after the slash (or <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-rows-none" id="ref-for-valdef-grid-template-rows-none①">none</a>, if not specified).</p>
+                        <p>设置 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑦">grid-template-columns</a> 为斜线后指定的轨道列表 (或者 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-rows-none" id="ref-for-valdef-grid-template-rows-none①">none</a>, 如果没指定).</p>
                     </li>
                 </ul>
-                <p>This syntax allows the author to align track names and sizes inline with their respective grid areas.</p>
+                <p>该语法允许开发人员将轨道名称和大小与其各自的网格区域内联对齐.</p>
                 <div class="example" id="example-3733623f">
                     <a class="self-link" href="/grid/#example-3733623f"></a>
                     <pre>grid-template: [header-top] "a   a   a"     [header-bottom]
                  [main-top] "b   b   b" 1fr [main-bottom]
                           / auto 1fr auto;
 </pre>
-                    <p>is equivalent to</p>
+                    <p>等同于</p>
                     <pre>grid-template-areas: "a a a"
                      "b b b";
 grid-template-rows: [header-top] auto [header-bottom main-top] 1fr [main-bottom];
 grid-template-columns: auto 1fr auto;
 </pre>
-                    <p>and creates the following grid:</p>
+                    <p>创建如下网格:</p>
                     <figure>
                         <object data="./images/grid-shorthand.svg" type="image/svg+xml">
                             <ul>
@@ -1638,19 +1638,18 @@ grid-template-columns: auto 1fr auto;
                         <figcaption>The grid created by the declarations above. (The “a/b-start/end” names are created <a href="/grid/#implicit-named-lines">implicitly</a> by the <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①②">named grid areas</a>.) </figcaption>
                     </figure>
                 </div>
-                <p class="note" role="note"><span>Note:</span> Note that the <a class="css" data-link-type="maybe" href="/grid/#funcdef-repeat" id="ref-for-funcdef-repeat⑦">repeat()</a> function isn’t allowed in these track listings, as the tracks are intended to visually line up one-to-one with the rows/columns in the “ASCII art”.</p>
+                <p class="note" role="note"><span>注意:</span> 请注意，这些曲目列表中不允许使用<a class="css" data-link-type="maybe" href="/grid/#funcdef-repeat" id="ref-for-funcdef-repeat⑦">repeat()</a>函数，因为曲目旨在直观地与"ASCII art"中的行/列一一对齐.</p>
             </dd>
         </dl>
-        <p class="note" role="note"><span>Note:</span> The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid③">grid</a> shorthand accepts the same syntax, but also resets the implicit grid properties to their initial values. Unless authors want those to cascade in separately, it is therefore recommended to use <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid④">grid</a> instead of <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template④">grid-template</a>.</p>
-        <h3 class="heading settled" data-level="7.5" id="implicit-grids"><span class="secno">7.5. </span><span class="content"> The Implicit Grid</span><a class="self-link" href="/grid/#implicit-grids"></a></h3>
-        <p>The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑦">grid-template-rows</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑧">grid-template-columns</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑥">grid-template-areas</a> properties define a fixed number of tracks that form the <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑤">explicit grid</a>. When <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item④⑦">grid items</a> are positioned outside of these bounds, the <a data-link-type="dfn" href="/grid/#grid-container" id="ref-for-grid-container⑤②">grid container</a> generates
-            <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-lt="implicit grid track|implicit grid row|implicit grid column" id="implicit-grid-track">implicit grid tracks</dfn> by adding
-            <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport="" id="implicit-grid-lines">implicit grid lines</dfn> to the <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①③">grid</a>. These lines together with the <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑥">explicit grid</a> form the
-            <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-local-lt="implicit" id="implicit-grid">implicit grid</dfn>. The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows④">grid-auto-rows</a> and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns④">grid-auto-columns</a> properties size these <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track">implicit grid tracks</a>.</p>
-        <p>The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow">grid-auto-flow</a> property controls auto-placement of <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item④⑧">grid items</a> without an explicit position. Once the <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑦">explicit grid</a> is filled (or if there is no <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑧">explicit grid</a>) auto-placement will also cause the generation of <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track①">implicit grid tracks</a>.</p>
-        <p>The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑤">grid</a> <a data-link-type="dfn" href="https://www.w3.org/TR/css-cascade-4/#shorthand-property" id="ref-for-shorthand-property②">shorthand</a> property can set the
-            <dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport="" id="implicit-grid-properties">implicit grid properties</dfn> (<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow①">grid-auto-flow</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑤">grid-auto-rows</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑤">grid-auto-columns</a>) together with the <a data-link-type="dfn" href="/grid/#explicit-grid-properties" id="ref-for-explicit-grid-properties">explicit grid properties</a> in a single declaration.</p>
-        <h3 class="heading settled" data-level="7.6" id="auto-tracks"><span class="secno">7.6. </span><span class="content"> Implicit Track Sizing: the <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑥">grid-auto-rows</a> and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑥">grid-auto-columns</a> properties</span><a class="self-link" href="/grid/#auto-tracks"></a></h3>
+        <p class="note" role="note"><span>注意:</span> <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid③">grid</a>接受相同的语法，但也将隐式网格属性重置为它们的初始值. 除非开发人员希望分开级联, 因此建议使用 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid④">grid</a> 而不是 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template④">grid-template</a>.</p>
+        <h3 class="heading settled" data-level="7.5" id="implicit-grids"><span class="secno">7.5. </span><span class="content"> 隐式网格</span><a class="self-link" href="/grid/#implicit-grids"></a></h3>
+        <p> <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑦">grid-template-rows</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑧">grid-template-columns</a>, 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑥">grid-template-areas</a> 属性定义固定数目的轨道从而形成显式网格 <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑤">explicit grid</a>. 当 <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item④⑦">grid items</a> 被定位到边缘之外时, 通过向网格<a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①③">grid</a>中添加隐式网格线的形式, 网格容器<a data-link-type="dfn" href="/grid/#grid-container" id="ref-for-grid-container⑤②">grid container</a> 生成隐式网格轨道
+            <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-lt="implicit grid track|implicit grid row|implicit grid column" id="implicit-grid-track">implicit grid tracks</dfn>. 这些线与显式网格 <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑥">explicit grid</a> 一起构成隐式网格
+            <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-local-lt="implicit" id="implicit-grid">implicit grid</dfn>. <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows④">grid-auto-rows</a> 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns④">grid-auto-columns</a> 属性决定了这些隐式网格轨道 <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track">implicit grid tracks</a>的大小.</p>
+        <p>没有明确定位时, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow">grid-auto-flow</a> 属性控制着网格项目 <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item④⑧">grid items</a> 的自动布局. 一旦显式网格 <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑦">explicit grid</a> 被填充 (或者没有隐式网格 <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑧">explicit grid</a>) 自动布局也会导致生成隐式网格轨道 <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track①">implicit grid tracks</a>.</p>
+        <p><a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑤">grid</a> 属性可以在单个声明中将隐式网格属性
+             (<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow①">grid-auto-flow</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑤">grid-auto-rows</a>, 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑤">grid-auto-columns</a>) 和显式网格属性 <a data-link-type="dfn" href="/grid/#explicit-grid-properties" id="ref-for-explicit-grid-properties">explicit grid properties</a>一起设置.</p>
+        <h3 class="heading settled" data-level="7.6" id="auto-tracks"><span class="secno">7.6. </span><span class="content"> 隐式轨道尺寸:  <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑥">grid-auto-rows</a> 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑥">grid-auto-columns</a> 属性</span><a class="self-link" href="/grid/#auto-tracks"></a></h3>
         <table class="def propdef" data-link-for-hint="grid-auto-columns">
             <tbody>
                 <tr>
@@ -1717,8 +1716,8 @@ grid-template-columns: auto 1fr auto;
                 </tr>
             </tbody>
         </table>
-        <p>If a grid item is positioned into a row or column that is not explicitly sized by <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑧">grid-template-rows</a> or <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑨">grid-template-columns</a>, <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track②">implicit grid tracks</a> are created to hold it. This can happen either by explicitly positioning into a row or column that is out of range, or by the <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm">auto-placement algorithm</a> creating additional rows or columns. The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑦">grid-auto-columns</a> and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑦">grid-auto-rows</a> properties specify the size of such implicitly-created tracks.</p>
-        <p>If multiple track sizes are given, the pattern is repeated as necessary to find the size of the implicit tracks. The first <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track③">implicit grid track</a> after the <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑨">explicit grid</a> receives the first specified size, and so on forwards; and the last <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track④">implicit grid track</a> before the <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid②⓪">explicit grid</a> receives the last specified size, and so on backwards.</p>
+        <p>如果一个网格项目被定位到未由<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows①⑧">grid-template-rows</a>或<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns①⑨">grid-template-columns</a>显式确定大小的行或列中，则会创建隐式网格轨道<a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track②">implicit grid tracks</a>来包裹它 . 这可以通过显式定位到超出范围的行或列来实现，也可以通过自动布局算法<a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm">auto-placement algorithm</a>创建其他行或列来实现.  <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑦">grid-auto-columns</a> 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑦">grid-auto-rows</a> 属性指定这种隐式创建轨道的大小.</p>
+        <p>如果给出多个轨道大小，则根据需要重复该模式以查找隐式轨道的大小. 显式网格<a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid①⑨">explicit grid</a>之后的第一个隐式网格轨道 <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track③">implicit grid track</a>接收第一个指定的大小,依此类推; 显式网格<a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid②⓪">explicit grid</a>之前的最后一个隐式网格轨道 <a data-link-type="dfn" href="/grid/#implicit-grid-track" id="ref-for-implicit-grid-track④">implicit grid track</a> 接收最后指定的大小,依此类推.</p>
         <div class="example" id="example-c764bf91">
             <a class="self-link" href="/grid/#example-c764bf91"></a>
             <pre class="lang-html highlight"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
@@ -1747,7 +1746,7 @@ grid-template-columns: auto 1fr auto;
                 <figcaption>A 2×2 grid with one explicit 20px×20px grid cell in the first row+column and three additional cells resulting from the implicit 40px column and row generated to hold the additional grid items. </figcaption>
             </figure>
         </div>
-        <h3 class="heading settled" data-level="7.7" id="grid-auto-flow-property"><span class="secno">7.7. </span><span class="content"> <dfn class="dfn-paneled" data-dfn-type="dfn" data-lt="auto-placement|automatic placement" data-noexport="" id="auto-placement">Automatic Placement</dfn>: the <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow②">grid-auto-flow</a> property</span><a class="self-link" href="/grid/#grid-auto-flow-property"></a></h3>
+        <h3 class="heading settled" data-level="7.7" id="grid-auto-flow-property"><span class="secno">7.7. </span><span class="content"> <dfn class="dfn-paneled" data-dfn-type="dfn" data-lt="auto-placement|automatic placement" data-noexport="" id="auto-placement">自动布局</dfn>: <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow②">grid-auto-flow</a> 属性</span><a class="self-link" href="/grid/#grid-auto-flow-property"></a></h3>
         <table class="def propdef" data-link-for-hint="grid-auto-flow">
             <tbody>
                 <tr>
@@ -1813,30 +1812,30 @@ grid-template-columns: auto 1fr auto;
                 </tr>
             </tbody>
         </table>
-        <p><a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item④⑨">Grid items</a> that aren’t explicitly placed are automatically placed into an unoccupied space in the <a data-link-type="dfn" href="/grid/#grid-container" id="ref-for-grid-container⑤⑤">grid container</a> by the <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm①">auto-placement algorithm</a>. <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow③">grid-auto-flow</a> controls how the <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm②">auto-placement algorithm</a> works, specifying exactly how auto-placed items get flowed into the grid. See <a href="/grid/#auto-placement-algo">§8.5 Grid Item Placement Algorithm</a> for details on precisely how the auto-placement algorithm works.</p>
+        <p>未显式定位的网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item④⑨">Grid items</a> 通过自动布局算法<a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm①">auto-placement algorithm</a>自动定位到网格容器<a data-link-type="dfn" href="/grid/#grid-container" id="ref-for-grid-container⑤⑤">grid container</a> 中的未占用空间. <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow③">grid-auto-flow</a>控制自动布局算法 <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm②">auto-placement algorithm</a> 是如何工作的, 明确的指定自动布局项是如何流入网格中的. 有关自动布局算法的工作原理的详细信息，请参阅<a href="/grid/#auto-placement-algo">§8.5 Grid Item Placement Algorithm</a>网格布局算法.</p>
         <dl>
             <dt>
                 <dfn class="dfn-paneled css" data-dfn-for="grid-auto-flow" data-dfn-type="value" data-export="" id="valdef-grid-auto-flow-row">row</dfn>
             </dt>
-            <dd> The <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm③">auto-placement algorithm</a> places items by filling each row in turn, adding new rows as necessary. If neither <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row">row</a> nor <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-column" id="ref-for-valdef-grid-auto-flow-column">column</a> is provided, <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row①">row</a> is assumed.
+            <dd> 自动布局算法 <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm③">auto-placement algorithm</a> 通过依次填充每行来定位项目, 并根据需要添加新行. 如果既没提供 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row">row</a> 也没提供 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-column" id="ref-for-valdef-grid-auto-flow-column">column</a>,那假定是 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row①">row</a>.
             </dd>
             <dt>
                 <dfn class="dfn-paneled css" data-dfn-for="grid-auto-flow" data-dfn-type="value" data-export="" id="valdef-grid-auto-flow-column">column</dfn>
             </dt>
-            <dd> The <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm④">auto-placement algorithm</a> places items by filling each column in turn, adding new columns as necessary.
+            <dd> 自动布局算法 <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm④">auto-placement algorithm</a> 通过依次填充每列来定位项目, 并根据需要添加新列.
             </dd>
             <dt>
                 <dfn class="dfn-paneled css" data-dfn-for="grid-auto-flow" data-dfn-type="value" data-export="" id="valdef-grid-auto-flow-dense">dense</dfn>
             </dt>
             <dd>
-                If specified, the <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm⑤">auto-placement algorithm</a> uses a “dense” packing algorithm, which attempts to fill in holes earlier in the grid if smaller items come up later. This may cause items to appear out-of-order, when doing so would fill in holes left by larger items.
-                <p>If omitted, a “sparse” algorithm is used, where the placement algorithm only ever moves “forward” in the grid when placing items, never backtracking to fill holes. This ensures that all of the auto-placed items appear “in order”, even if this leaves holes that could have been filled by later items.</p>
+                如果指定，则自动布局算法<a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm⑤">auto-placement algorithm</a>使用"dense"包装算法,如果稍后出现较小的项目,该算法会尝试在网格中较早的时间填充空洞.
+                <p>如果省略，则使用"sparse"算法，其中布局算法仅在定位项目时在网格中"向前"移动，从不回溯以填充空洞. 这可确保所有自动布局项目"按顺序"出现，即使这会留下可能由后来的项目填充的空洞.</p>
             </dd>
         </dl>
-        <p class="note" role="note"><span>Note:</span> A future level of this module is expected to add a value that flows auto-positioned items together into a single “default” cell.</p>
-        <p>Auto-placement takes <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⓪">grid items</a> in <a data-link-type="dfn" href="https://www.w3.org/TR/css-flexbox-1/#order-modified-document-order" id="ref-for-order-modified-document-order①">order-modified document order</a>.</p>
+        <p class="note" role="note"><span>注意:</span> 该模块的未来级别预计会添加一个将自动布局项目一起放入单个"默认"单元的值.</p>
+        <p>自动布局会按<a data-link-type="dfn" href="https://www.w3.org/TR/css-flexbox-1/#order-modified-document-order" id="ref-for-order-modified-document-order①">order-modified document order</a>顺序接收网格项 <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⓪">grid items</a>.</p>
         <div class="example" id="example-8b09d1ac">
-            <a class="self-link" href="/grid/#example-8b09d1ac"></a> In the following example, there are three columns, each auto-sized to their contents. No rows are explicitly defined. The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow④">grid-auto-flow</a> property is <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row②">row</a> which instructs the grid to search across its three columns starting with the first row, then the next, adding rows as needed until sufficient space is located to accommodate the position of any auto-placed <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤①">grid item</a>.
+            <a class="self-link" href="/grid/#example-8b09d1ac"></a> 在以下示例中，有三列，每列都自动调整其内容大小. 没有行被显式定义. <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow④">grid-auto-flow</a>属性是指示网格从第一行开始跨三列搜索的行<a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row②">row</a>，然后是下一行，根据需要添加行，直到找到足够的空间以容纳任何自动布局的网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤①">grid item</a>的位置.
             <div class="figure">
                 <img alt="Image: A form arranged using automatic placement." src="./images/auto-placed-form.png">
                 <p class="caption">A form arranged using automatic placement. </p>
@@ -1917,7 +1916,7 @@ form &gt; input, form &gt; select {
 &lt;/form&gt;
 </pre>
         </div>
-        <h3 class="heading settled" data-level="7.8" id="grid-shorthand"><span class="secno">7.8. </span><span class="content"> Grid Definition Shorthand: the <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑥">grid</a> property</span><a class="self-link" href="/grid/#grid-shorthand"></a></h3>
+        <h3 class="heading settled" data-level="7.8" id="grid-shorthand"><span class="secno">7.8. </span><span class="content"> 定义网格简写属性: <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑥">grid</a> </span><a class="self-link" href="/grid/#grid-shorthand"></a></h3>
         <table class="def propdef" data-link-for-hint="grid">
             <tbody>
                 <tr>
@@ -1983,7 +1982,7 @@ form &gt; input, form &gt; select {
                 </tr>
             </tbody>
         </table>
-        <p>The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑦">grid</a> property is a <a data-link-type="dfn" href="https://www.w3.org/TR/css-cascade-4/#shorthand-property" id="ref-for-shorthand-property③">shorthand</a> that sets all of the <a data-link-type="dfn" href="/grid/#explicit-grid-properties" id="ref-for-explicit-grid-properties①">explicit grid properties</a> (<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows②⓪">grid-template-rows</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns②①">grid-template-columns</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑦">grid-template-areas</a>), and all the <a data-link-type="dfn" href="/grid/#implicit-grid-properties" id="ref-for-implicit-grid-properties">implicit grid properties</a> (<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑨">grid-auto-rows</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑨">grid-auto-columns</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑤">grid-auto-flow</a>), in a single declaration. (It does not reset the <a data-link-type="dfn" href="https://www.w3.org/TR/css3-align/#gutter" id="ref-for-gutter②">gutter</a> properties.) Its syntax matches <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template⑥">grid-template</a>, plus an additional syntax form for defining auto-flow grids:</p>
+        <p> 在一个单一的声明中, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑦">grid</a> 属性以简写的形式定义所有的 <a data-link-type="dfn" href="/grid/#explicit-grid-properties" id="ref-for-explicit-grid-properties①">explicit grid properties</a> (<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows②⓪">grid-template-rows</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns②①">grid-template-columns</a>, 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑦">grid-template-areas</a>), 以及所有的<a data-link-type="dfn" href="/grid/#implicit-grid-properties" id="ref-for-implicit-grid-properties">implicit grid properties</a> (<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows⑨">grid-auto-rows</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns⑨">grid-auto-columns</a>, 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑤">grid-auto-flow</a>). (它并没有重置 <a data-link-type="dfn" href="https://www.w3.org/TR/css3-align/#gutter" id="ref-for-gutter②">gutter</a> 属性.) 它的语法匹配 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template⑥">grid-template</a>,另外还有一个用于定义自动流网格的附加语法形式:</p>
         <dl>
             <dt>
                 <dfn class="css" data-dfn-for="grid" data-dfn-type="value" data-export="" id="grid-s-auto-row"><a class="production" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows②①">&lt;‘grid-template-rows’&gt;</a> / [ auto-flow &amp;&amp; dense? ] <a class="production" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns①⓪">&lt;‘grid-auto-columns’&gt;</a>?<a class="self-link" href="/grid/#grid-s-auto-row"></a></dfn>
@@ -1992,48 +1991,47 @@ form &gt; input, form &gt; select {
                 <dfn class="css" data-dfn-for="grid" data-dfn-type="value" data-export="" id="grid-s-auto-column">[ auto-flow &amp;&amp; dense? ] <a class="production" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows①⓪">&lt;‘grid-auto-rows’&gt;</a>? / <a class="production" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns②②">&lt;‘grid-template-columns’&gt;</a><a class="self-link" href="/grid/#grid-s-auto-column"></a></dfn>
             </dt>
             <dd>
-                Sets up auto-flow, by setting the tracks in one axis explicitly (setting either <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows②②">grid-template-rows</a> or <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns②③">grid-template-columns</a> as specified, and setting the other to <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-rows-none" id="ref-for-valdef-grid-template-rows-none②">none</a>), and specifying how to auto-repeat the tracks in the other axis (setting either <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows①①">grid-auto-rows</a> or <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns①①">grid-auto-columns</a> as specified, and setting the other to <span class="css">auto</span>). <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑥">grid-auto-flow</a> is also set to either <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row③">row</a> or <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-column" id="ref-for-valdef-grid-auto-flow-column①">column</a> accordingly, with <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-dense" id="ref-for-valdef-grid-auto-flow-dense">dense</a> if it’s specified.
-                <p>All other <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑧">grid</a> <a data-link-type="dfn" href="https://www.w3.org/TR/css-cascade-4/#longhand" id="ref-for-longhand">sub-properties</a> are reset to their initial values.</p>
+                通过明确设置一个轴的轨迹来设置自动流 (根据指定设置 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-rows" id="ref-for-propdef-grid-template-rows②②">grid-template-rows</a> 或 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-columns" id="ref-for-propdef-grid-template-columns②③">grid-template-columns</a> , 并将其他设置为 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-template-rows-none" id="ref-for-valdef-grid-template-rows-none②">none</a>), 并且指定如何自动重复其他轴上的轨道 (根据指定设置 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-rows" id="ref-for-propdef-grid-auto-rows①①">grid-auto-rows</a> 或 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-columns" id="ref-for-propdef-grid-auto-columns①①">grid-auto-columns</a>, 并且设定其他为 <span class="css">auto</span>). <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑥">grid-auto-flow</a> 也会相应的设置为 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-row" id="ref-for-valdef-grid-auto-flow-row③">row</a> 或 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-column" id="ref-for-valdef-grid-auto-flow-column①">column</a>, 如果指定了 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-dense" id="ref-for-valdef-grid-auto-flow-dense">dense</a> 则为设置为<a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-dense" id="ref-for-valdef-grid-auto-flow-dense">dense</a>.
+                <p>所有 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑧">grid</a> 的子属性 <a data-link-type="dfn" href="https://www.w3.org/TR/css-cascade-4/#longhand" id="ref-for-longhand">sub-properties</a> 都被设置为它们各自的初始值.</p>
             </dd>
         </dl>
-        <p class="note" role="note"><span>Note:</span> Note that you can only specify the explicit <em>or</em> the implicit grid properties in a single <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑨">grid</a> declaration. The sub-properties you don’t specify are set to their initial value, as normal for <a data-link-type="dfn" href="https://www.w3.org/TR/css-cascade-4/#shorthand-property" id="ref-for-shorthand-property④">shorthands</a>.</p>
+        <p class="note" role="note"><span>注意:</span> 请注意，您只能在单个<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid⑨">grid</a>声明中指定显式或隐式网格属性. 您不指定的子属性设置为它们的初始值，正如对于简写<a data-link-type="dfn" href="https://www.w3.org/TR/css-cascade-4/#shorthand-property" id="ref-for-shorthand-property④">shorthands</a>一样 .</p>
         <div class="example" id="example-abd22789">
-            <a class="self-link" href="/grid/#example-abd22789"></a> In addition to accepting the <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template⑦">grid-template</a> shorthand syntax for setting up the <a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid②①">explicit grid</a>, the <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid①⓪">grid</a> shorthand can also easily set up parameters for an auto-formatted grid. For example, <a class="css" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid①①">grid: auto-flow 1fr / 100px;</a> is equivalent to
+            <a class="self-link" href="/grid/#example-abd22789"></a> 除了接受用于设置显式网格<a data-link-type="dfn" href="/grid/#explicit-grid" id="ref-for-explicit-grid②①">explicit grid</a>的 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template" id="ref-for-propdef-grid-template⑦">grid-template</a> 简写语法外 , <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid①⓪">grid</a> 简写也可以容易的为自动格式化的网格设置参数. 例如, <a class="css" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid①①">grid: auto-flow 1fr / 100px;</a> 等同于
             <pre>grid-template: none / 100px;
 grid-auto-flow: row;
 grid-auto-rows: 1fr;
 grid-auto-columns: auto;
 </pre>
-            <p>Similarly, <a class="css" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid①②">grid: none / auto-flow 1fr</a> is equivalent to</p>
+            <p>同样, <a class="css" data-link-type="propdesc" href="/grid/#propdef-grid" id="ref-for-propdef-grid①②">grid: none / auto-flow 1fr</a> 等同于</p>
             <pre>grid-template: none;
 grid-auto-flow: column;
 grid-auto-rows: auto;
 grid-auto-columns: 1fr;
 </pre>
         </div>
-        <h2 class="heading settled" data-level="8" id="placement"><span class="secno">8. </span><span class="content"> Placing Grid Items</span><a class="self-link" href="/grid/#placement"></a></h2>
-        <p>Every <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤②">grid item</a> is associated with a <a data-link-type="dfn" href="/grid/#grid-area" id="ref-for-grid-area①⑥">grid area</a>, a rectangular set of adjacent <a data-link-type="dfn" href="/grid/#grid-cell" id="ref-for-grid-cell③">grid cells</a> that the <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤③">grid item</a> occupies. This <a data-link-type="dfn" href="/grid/#grid-area" id="ref-for-grid-area①⑦">grid area</a> defines the <a data-link-type="dfn" href="https://www.w3.org/TR/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a> for the <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤④">grid item</a> within which the self-alignment properties (<a class="property" data-link-type="propdesc" href="https://www.w3.org/TR/css3-align/#propdef-justify-self" id="ref-for-propdef-justify-self">justify-self</a> and <a class="property" data-link-type="propdesc" href="https://www.w3.org/TR/css3-align/#propdef-align-self" id="ref-for-propdef-align-self①">align-self</a>) determine their actual position. The cells that a <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑤">grid item</a> occupies also influence the sizing of the grid’s rows and columns, defined in <a href="/grid/#layout-algorithm">§11 Grid Sizing</a>.</p>
-        <p>The location of a <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑥">grid item’s</a> <a data-link-type="dfn" href="/grid/#grid-area" id="ref-for-grid-area①⑧">grid area</a> within the <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①④">grid</a> is defined by its
-            <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-local-lt="placement" data-lt="grid placement" id="grid-placement">placement</dfn>, which consists of a <a data-link-type="dfn" href="/grid/#grid-position" id="ref-for-grid-position">grid position</a> and a <a data-link-type="dfn" href="/grid/#grid-span" id="ref-for-grid-span①">grid span</a>:</p>
+        <h2 class="heading settled" data-level="8" id="placement"><span class="secno">8. </span><span class="content"> 定位网格项</span><a class="self-link" href="/grid/#placement"></a></h2>
+        <p>每个网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤②">grid item</a>都与一个网格区域<a data-link-type="dfn" href="/grid/#grid-area" id="ref-for-grid-area①⑥">grid area</a>相关联，该网格区域是网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤③">grid item</a>占据的矩形相邻网格单元格<a data-link-type="dfn" href="/grid/#grid-cell" id="ref-for-grid-cell③">grid cells</a>集合. 该网格区域<a data-link-type="dfn" href="/grid/#grid-area" id="ref-for-grid-area①⑦">grid area</a>定义网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤④">grid item</a>的包含块<a data-link-type="dfn" href="https://www.w3.org/TR/css-display-3/#containing-block" id="ref-for-containing-block">containing block</a> 其中self-alignment属性(<a class="property" data-link-type="propdesc" href="https://www.w3.org/TR/css3-align/#propdef-justify-self" id="ref-for-propdef-justify-self">justify-self</a> and <a class="property" data-link-type="propdesc" href="https://www.w3.org/TR/css3-align/#propdef-align-self" id="ref-for-propdef-align-self①">align-self</a>)确定其实际位置. 网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑤">grid item</a>占据的单元格也会影响网格行和列的大小，这在<a href="/grid/#layout-algorithm">§11 Grid Sizing</a>中进行了定义.</p>
+        <p>在网格<a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①④">grid</a>中, 网格项的<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑥">grid item</a>网格区域<a data-link-type="dfn" href="/grid/#grid-area" id="ref-for-grid-area①⑧">grid area</a>的位置由网格的位置定义，该位置包括网格位置<a data-link-type="dfn" href="/grid/#grid-position" id="ref-for-grid-position">grid position</a> 和 和网格范围<a data-link-type="dfn" href="/grid/#grid-span" id="ref-for-grid-span①">grid span</a>:</p>
         <dl>
             <dt>
                 <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-local-lt="position|row position|column position" id="grid-position">grid position</dfn>
             </dt>
-            <dd> The <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑦">grid item</a>’s location in the <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑤">grid</a> in each axis. A <a data-link-type="dfn" href="/grid/#grid-position" id="ref-for-grid-position①">grid position</a> can be either
-                <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-lt="definite grid position|definite row position|definite column position|definite position" id="definite-grid-position">definite</dfn> (explicitly specified) or
-                <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-lt="automatic grid position|automatic row position|automatic column position|automatic position" id="automatic-grid-position">automatic</dfn> (determined by <a data-link-type="dfn" href="/grid/#auto-placement" id="ref-for-auto-placement②">auto-placement</a>).
+            <dd> 网格项 <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑦">grid item</a>在网格 <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑤">grid</a> 每条轴中的位置. 网格位置<a data-link-type="dfn" href="/grid/#grid-position" id="ref-for-grid-position①">grid position</a> 既可以是确定的
+                <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-lt="definite grid position|definite row position|definite column position|definite position" id="definite-grid-position">definite</dfn> (显式指定) 也可以是自动的
+                <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-lt="automatic grid position|automatic row position|automatic column position|automatic position" id="automatic-grid-position">automatic</dfn> (由自动布局 <a data-link-type="dfn" href="/grid/#auto-placement" id="ref-for-auto-placement②">auto-placement</a>指定).
             </dd>
             <dt>
                 <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-local-lt="span|row span|column span" id="grid-span">grid span</dfn>
             </dt>
-            <dd> How many <a data-link-type="dfn" href="/grid/#grid-track" id="ref-for-grid-track②①">grid tracks</a> the <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑧">grid item</a> occupies in each axis. A <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑨">grid item</a>’s <a data-link-type="dfn" href="/grid/#grid-span" id="ref-for-grid-span②">grid span</a> is always
-                <dfn data-dfn-type="dfn" data-export="" data-lt="definite grid span|definite row span|definite column span|definite span" id="definite-grid-span">definite<a class="self-link" href="/grid/#definite-grid-span"></a></dfn>, defaulting to 1 in each axis if it can’t be otherwise determined for that axis.
+            <dd> 网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑧">grid item</a>在每条轴中占用多少条网格轨道 <a data-link-type="dfn" href="/grid/#grid-track" id="ref-for-grid-track②①">grid tracks</a>. 一个网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑤⑨">grid item</a>的网格跨度 <a data-link-type="dfn" href="/grid/#grid-span" id="ref-for-grid-span②">grid span</a> 总是确定的
+                , 如果不能以其他形式确定轴, 则每条轴中默认为1.
             </dd>
         </dl>
-        <p>The
+        <p>网格布局属性
             <dfn class="dfn-paneled" data-dfn-type="dfn" data-export="" data-lt="grid-placement property" id="grid-placement-property">grid-placement properties</dfn>—
-            <wbr>the longhands <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-start" id="ref-for-propdef-grid-row-start①">grid-row-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-end" id="ref-for-propdef-grid-row-end①">grid-row-end</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-start" id="ref-for-propdef-grid-column-start①">grid-column-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-end" id="ref-for-propdef-grid-column-end①">grid-column-end</a>, and their shorthands <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row" id="ref-for-propdef-grid-row②">grid-row</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column" id="ref-for-propdef-grid-column①">grid-column</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-area" id="ref-for-propdef-grid-area①">grid-area</a>—
-            <wbr>allow the author to specify a <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑥⓪">grid item</a>’s <a data-link-type="dfn" href="/grid/#grid-placement" id="ref-for-grid-placement①">placement</a> by providing any (or none) of the following six pieces of information:</p>
+            <wbr>详细属性 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-start" id="ref-for-propdef-grid-row-start①">grid-row-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-end" id="ref-for-propdef-grid-row-end①">grid-row-end</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-start" id="ref-for-propdef-grid-column-start①">grid-column-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-end" id="ref-for-propdef-grid-column-end①">grid-column-end</a>, 和它们的简写属性 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row" id="ref-for-propdef-grid-row②">grid-row</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column" id="ref-for-propdef-grid-column①">grid-column</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-area" id="ref-for-propdef-grid-area①">grid-area</a>—
+            <wbr>允许开发者通过提供以下六条信息中的任何一条(或不提供)去指定网格项的布局 <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑥⓪">grid item</a><a data-link-type="dfn" href="/grid/#grid-placement" id="ref-for-grid-placement①">placement</a>:</p>
         <div class="overlarge">
             <table class="data" style="width: auto">
                 <thead>
@@ -2077,11 +2075,11 @@ grid-auto-columns: 1fr;
                 </tbody>
             </table>
         </div>
-        <p>A definite value for any two of
+        <p>在给定的尺寸中,
             <var>Start</var>,
-            <var>End</var>, and
-            <var>Span</var> in a given dimension implies a definite value for the third.</p>
-        <p>The following table summarizes the conditions under which a grid position or span is <i data-lt="">definite</i> or <i data-lt="">automatic</i>:</p>
+            <var>End</var>, 和
+            <var>Span</var> 中确定任何两个值则第三个值也随即确定.</p>
+        <p>下表总结了网格位置或跨度是<i data-lt="">definite</i>的还是<i data-lt="">automatic</i>的条件:</p>
         <div class="overlarge">
             <table class="data">
                 <thead>
@@ -2114,9 +2112,9 @@ grid-auto-columns: 1fr;
                 </tbody>
             </table>
         </div>
-        <h3 class="heading settled" data-level="8.1" id="common-uses"><span class="secno">8.1. </span><span class="content"> Common Patterns for Grid Placement</span><a class="self-link" href="/grid/#common-uses"></a></h3>
-        <p><em>This section is informative.</em></p>
-        <p>The <a data-link-type="dfn" href="/grid/#grid-placement-property" id="ref-for-grid-placement-property①⓪">grid-placement property</a> longhands are organized into three shorthands:</p>
+        <h3 class="heading settled" data-level="8.1" id="common-uses"><span class="secno">8.1. </span><span class="content"> 网格布局的常见模式</span><a class="self-link" href="/grid/#common-uses"></a></h3>
+        <p><em>本节内容只是告知性的.</em></p>
+        <p> 网格布局属性<a data-link-type="dfn" href="/grid/#grid-placement-property" id="ref-for-grid-placement-property①⓪">grid-placement property</a> 的普通写法可以拆分为三种简写写法:</p>
         <div class="overlarge">
             <table class="data" id="grid-property-breakdown">
                 <tbody>
@@ -2143,8 +2141,8 @@ grid-auto-columns: 1fr;
                 </tbody>
             </table>
         </div>
-        <h4 class="heading settled" data-level="8.1.1" id="common-uses-named-areas"><span class="secno">8.1.1. </span><span class="content"> Named Areas</span><a class="self-link" href="/grid/#common-uses-named-areas"></a></h4>
-        <p>An item can be placed into a <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①③">named grid area</a> (such as those produced by the template in <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑧">grid-template-areas</a>) by specifying the area’s name in <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-area" id="ref-for-propdef-grid-area③">grid-area</a>:</p>
+        <h4 class="heading settled" data-level="8.1.1" id="common-uses-named-areas"><span class="secno">8.1.1. </span><span class="content"> 命名区域</span><a class="self-link" href="/grid/#common-uses-named-areas"></a></h4>
+        <p>通过在网格区域<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-area" id="ref-for-propdef-grid-area③">grid-area</a>中指定区域名,可以把一个网格项定位进命名网格区域中 <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①③">named grid area</a> (如在 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-template-areas" id="ref-for-propdef-grid-template-areas①⑧">grid-template-areas</a>中由模版生成的那些):</p>
         <div class="example" id="example-df960baa">
             <a class="self-link" href="/grid/#example-df960baa"></a>
             <pre>article {
@@ -2153,7 +2151,7 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <p>An item can also be <em>partially</em> aligned with a <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①④">named grid area</a>, with other edges aligned to some other line:</p>
+        <p>项目也可以与命名网格区域<a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①④">named grid area</a>部分对齐，其他边缘与其他网格线对齐:</p>
         <div class="example" id="example-7c4df580">
             <a class="self-link" href="/grid/#example-7c4df580"></a>
             <pre>.one {
@@ -2162,8 +2160,8 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <h4 class="heading settled" data-level="8.1.2" id="common-uses-numeric"><span class="secno">8.1.2. </span><span class="content"> Numeric Indexes and Spans</span><a class="self-link" href="/grid/#common-uses-numeric"></a></h4>
-        <p>Grid items can be positioned and sized by number, which is particularly helpful for script-driven layouts:</p>
+        <h4 class="heading settled" data-level="8.1.2" id="common-uses-numeric"><span class="secno">8.1.2. </span><span class="content"> 数字索引和跨度</span><a class="self-link" href="/grid/#common-uses-numeric"></a></h4>
+        <p>网格项目可以通过数字进行定位和大小，这对脚本驱动的布局特别有用:</p>
         <div class="example" id="example-b27528ea">
             <a class="self-link" href="/grid/#example-b27528ea"></a>
             <pre>.two {
@@ -2173,7 +2171,7 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <p>By default, a grid item has a span of 1. Different spans can be given explicitly:</p>
+        <p>默认情况下，网格项的跨度为1.可以明确给出不同的跨度:</p>
         <div class="example" id="example-27d41da0">
             <a class="self-link" href="/grid/#example-27d41da0"></a>
             <pre>.three {
@@ -2189,9 +2187,9 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <p class="note" role="note"><span>Note:</span> Note that grid indexes are <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#writing-mode" id="ref-for-writing-mode">writing mode</a> relative. For example, in a right-to-left language like Arabic, the first column is the rightmost column.</p>
-        <h4 class="heading settled" data-level="8.1.3" id="common-uses-named-lines"><span class="secno">8.1.3. </span><span class="content"> Named Lines and Spans</span><a class="self-link" href="/grid/#common-uses-named-lines"></a></h4>
-        <p>Instead of counting lines by number, <a data-link-type="dfn" href="/grid/#named-line" id="ref-for-named-line">named lines</a> can be referenced by their name:</p>
+        <p class="note" role="note"><span>注意:</span> 网格索引是相对书写模式 <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#writing-mode" id="ref-for-writing-mode">writing mode</a>. 例如, 在从右向左的书写语言如阿拉伯语言中, 第一列就是最右边的列.</p>
+        <h4 class="heading settled" data-level="8.1.3" id="common-uses-named-lines"><span class="secno">8.1.3. </span><span class="content"> 命名网格线和网格跨度</span><a class="self-link" href="/grid/#common-uses-named-lines"></a></h4>
+        <p>可以通过名称来引用命名网格线<a data-link-type="dfn" href="/grid/#named-line" id="ref-for-named-line">named lines</a>, 而不是按数字对网格线进行计数:</p>
         <div class="example" id="example-01a712a1">
             <a class="self-link" href="/grid/#example-01a712a1"></a>
             <pre>.five {
@@ -2200,7 +2198,7 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <p class="note" role="note"><span>Note:</span> Note that if a <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①⑤">named grid area</a> and a <a data-link-type="dfn" href="/grid/#named-line" id="ref-for-named-line①">named line</a> have the same name, the placement algorithm will prefer to use <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①⑥">named grid area</a>’s lines instead.</p>
+        <p class="note" role="note"><span>注意:</span> 如果命名网格区域 <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①⑤">named grid area</a> 和命名网格线 <a data-link-type="dfn" href="/grid/#named-line" id="ref-for-named-line①">named line</a> 有相同的名字, 那布局算法将倾向于使用命名网格区域 <a data-link-type="dfn" href="/grid/#named-grid-area" id="ref-for-named-grid-area①⑥">named grid area</a>的线.</p>
         <p>If there are multiple lines of the same name, they effectively establish a named set of grid lines, which can be exclusively indexed by filtering the placement by name:</p>
         <div class="example" id="example-d95f90ed">
             <a class="self-link" href="/grid/#example-d95f90ed"></a>
@@ -2213,8 +2211,8 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <h4 class="heading settled" data-level="8.1.4" id="common-uses-auto-placement"><span class="secno">8.1.4. </span><span class="content"> Auto Placement</span><a class="self-link" href="/grid/#common-uses-auto-placement"></a></h4>
-        <p>A <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑥①">grid item</a> can be automatically placed into the next available empty <a data-link-type="dfn" href="/grid/#grid-cell" id="ref-for-grid-cell④">grid cell</a>, growing the <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑥">grid</a> if there’s no space left.</p>
+        <h4 class="heading settled" data-level="8.1.4" id="common-uses-auto-placement"><span class="secno">8.1.4. </span><span class="content"> 自动布局</span><a class="self-link" href="/grid/#common-uses-auto-placement"></a></h4>
+        <p> 网格项<a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑥①">grid item</a> 可以自动定位到下一个可用的空网格单元 <a data-link-type="dfn" href="/grid/#grid-cell" id="ref-for-grid-cell④">grid cell</a>中, 如果没有剩余空间这生成网格 <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑥">grid</a>.</p>
         <div class="example" id="example-dd1fe353">
             <a class="self-link" href="/grid/#example-dd1fe353"></a>
             <pre>.eight {
@@ -2222,8 +2220,8 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <p>This can be used, for example, to list a number of sale items on a catalog site in a grid pattern.</p>
-        <p>Auto-placement can be combined with an explicit span, if the item should take up more than one cell:</p>
+        <p>例如，这可用于以网格模式列出目录网站上的许多销售物品.</p>
+        <p>如果网格项应占用多个单元格，自动布局可以与显式的跨度结合使用:</p>
         <div class="example" id="example-63dbf459">
             <a class="self-link" href="/grid/#example-63dbf459"></a>
             <pre>.nine {
@@ -2232,15 +2230,15 @@ grid-auto-columns: 1fr;
 }
 </pre>
         </div>
-        <p>Whether the <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm⑥">auto-placement algorithm</a> searchs across and adds rows, or searches across and adds columns, is controlled by the <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑦">grid-auto-flow</a> property.</p>
-        <p class="note" role="note"><span>Note:</span> By default, the <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm⑦">auto-placement algorithm</a> looks linearly through the grid without backtracking; if it has to skip some empty spaces to place a larger item, it will not return to fill those spaces. To change this behavior, specify the <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-dense" id="ref-for-valdef-grid-auto-flow-dense①">dense</a> keyword in <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑧">grid-auto-flow</a>.</p>
-        <h3 class="heading settled" data-level="8.2" id="placement-a11y"><span class="secno">8.2. </span><span class="content"> Grid Item Placement vs. Source Order</span><a class="self-link" href="/grid/#placement-a11y"></a></h3>
+        <p>自动布局算法 <a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm⑥">auto-placement algorithm</a>是搜索并添加行，还是搜索并添加列，都由 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑦">grid-auto-flow</a>属性控制.</p>
+        <p class="note" role="note"><span>注意:</span> 默认情况下，自动布局算法<a data-link-type="dfn" href="/grid/#grid-item-placement-algorithm" id="ref-for-grid-item-placement-algorithm⑦">auto-placement algorithm</a>在没有回溯的情况下通过网格线性查找; 如果它不得不跳过一些空的空间来放置更大的网格项, 它不会返回来填补这些空间. 要更改此行为, 请设置<a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-auto-flow" id="ref-for-propdef-grid-auto-flow⑧">grid-auto-flow</a>属性值为 <a class="css" data-link-type="maybe" href="/grid/#valdef-grid-auto-flow-dense" id="ref-for-valdef-grid-auto-flow-dense①">dense</a>关键字.</p>
+        <h3 class="heading settled" data-level="8.2" id="placement-a11y"><span class="secno">8.2. </span><span class="content"> 网格项的布局 vs. 源顺序</span><a class="self-link" href="/grid/#placement-a11y"></a></h3>
         <blockquote>
-            <p>“With great power comes great responsibility.” </p>
+            <p>“拥有权利的同时也被赋予了重大的责任.” </p>
         </blockquote>
-        <p>The abilities of the <a data-link-type="dfn" href="/grid/#grid-placement-property" id="ref-for-grid-placement-property①①">grid-placement properties</a> allow content to be freely arranged and reordered within the <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑦">grid</a>, such that the visual presentation can be largely disjoint from the underlying document source order. These abilities allow the author great freedom in tailoring the rendering to different devices and modes of presentation e.g. using <a data-link-type="dfn" href="https://www.w3.org/TR/mediaqueries-4/#media-query" id="ref-for-media-query">media queries</a>. However <strong>they are not a substitute for correct source ordering</strong>.</p>
-        <p>Correct source order is important for speech, for sequential navigation (such as keyboard navigation), and non-CSS UAs such as search engines, tactile browsers, etc. Grid placement <em>only</em> affects the visual presentation! This allows authors to optimize the document source for non-CSS/non-visual interaction modes, and use grid placement techniques to further manipulate the visual presentation so as to leave that source order intact.</p>
-        <h3 class="heading settled" data-level="8.3" id="line-placement"><span class="secno">8.3. </span><span class="content"> Line-based Placement: the <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-start" id="ref-for-propdef-grid-row-start③">grid-row-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-start" id="ref-for-propdef-grid-column-start③">grid-column-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-end" id="ref-for-propdef-grid-row-end③">grid-row-end</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-end" id="ref-for-propdef-grid-column-end③">grid-column-end</a> properties</span><a class="self-link" href="/grid/#line-placement"></a></h3>
+        <p>网格布局属性<a data-link-type="dfn" href="/grid/#grid-placement-property" id="ref-for-grid-placement-property①①">grid-placement properties</a>的能力允许内容在网格<a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑦">grid</a>内自由排列和重新排序，使得视觉呈现可以基本上与底层文档源顺序不相交. 这些能力允许开发者在渲染不同设备和呈现模式有很大的自由 比如使用 <a data-link-type="dfn" href="https://www.w3.org/TR/mediaqueries-4/#media-query" id="ref-for-media-query">media queries</a>. 但是，<strong>它们不能替代正确的源排序</strong>.</p>
+        <p>对演讲、顺序导航(例如键盘导航)以及无CSS的UA如搜索引擎触觉浏览器等, 正确的源顺序是很重要的. 网格布局仅影响视觉呈现! 这允许开发者优化非CSS /非视觉交互模式的文档源，并使用网格布局技术来进一步操纵视觉呈现，以便完整保留源顺序.</p>
+        <h3 class="heading settled" data-level="8.3" id="line-placement"><span class="secno">8.3. </span><span class="content"> 基于线的布局: <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-start" id="ref-for-propdef-grid-row-start③">grid-row-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-start" id="ref-for-propdef-grid-column-start③">grid-column-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-end" id="ref-for-propdef-grid-row-end③">grid-row-end</a>, 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-end" id="ref-for-propdef-grid-column-end③">grid-column-end</a> 属性</span><a class="self-link" href="/grid/#line-placement"></a></h3>
         <table class="def propdef" data-link-for-hint="grid-row-start">
             <tbody>
                 <tr>
@@ -2315,8 +2313,8 @@ grid-auto-columns: 1fr;
   [ <a class="production" data-link-type="type" href="https://www.w3.org/TR/css3-values/#integer-value" id="ref-for-integer-value">&lt;integer&gt;</a> <a data-link-type="grammar" href="https://www.w3.org/TR/css3-values/#comb-all" id="ref-for-comb-all②">&amp;&amp;</a> <a class="production" data-link-type="type" href="https://www.w3.org/TR/css3-values/#identifier-value" id="ref-for-identifier-value④">&lt;custom-ident&gt;</a><a data-link-type="grammar" href="https://www.w3.org/TR/css3-values/#mult-opt" id="ref-for-mult-opt②②">?</a> ] <a data-link-type="grammar" href="https://www.w3.org/TR/css3-values/#comb-one" id="ref-for-comb-one②⑧">|</a>
   [ span <a data-link-type="grammar" href="https://www.w3.org/TR/css3-values/#comb-all" id="ref-for-comb-all③">&amp;&amp;</a> [ <a class="production" data-link-type="type" href="https://www.w3.org/TR/css3-values/#integer-value" id="ref-for-integer-value①">&lt;integer&gt;</a> <a data-link-type="grammar" href="https://www.w3.org/TR/css3-values/#comb-any" id="ref-for-comb-any①">||</a> <a class="production" data-link-type="type" href="https://www.w3.org/TR/css3-values/#identifier-value" id="ref-for-identifier-value⑤">&lt;custom-ident&gt;</a> ] ]
 </pre>
-        <p>The <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-start" id="ref-for-propdef-grid-row-start④">grid-row-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-start" id="ref-for-propdef-grid-column-start④">grid-column-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-end" id="ref-for-propdef-grid-row-end④">grid-row-end</a>, and <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-end" id="ref-for-propdef-grid-column-end④">grid-column-end</a> properties determine a <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑥③">grid item</a>’s size and location within the <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑧">grid</a> by contributing a line, a span, or nothing (automatic) to its <a data-link-type="dfn" href="/grid/#grid-placement" id="ref-for-grid-placement②">grid placement</a>, thereby specifying the <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#inline-start" id="ref-for-inline-start">inline-start</a>, <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#block-start" id="ref-for-block-start">block-start</a>, <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#inline-end" id="ref-for-inline-end">inline-end</a>, and <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#block-end" id="ref-for-block-end">block-end</a> edges of its <a data-link-type="dfn" href="/grid/#grid-area" id="ref-for-grid-area①⑨">grid area</a>.</p>
-        <p>Values have the following meanings:</p>
+        <p>在网格 <a data-link-type="dfn" href="/grid/#grid" id="ref-for-grid①⑧">grid</a>中, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-start" id="ref-for-propdef-grid-row-start④">grid-row-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-start" id="ref-for-propdef-grid-column-start④">grid-column-start</a>, <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-row-end" id="ref-for-propdef-grid-row-end④">grid-row-end</a>, 和 <a class="property" data-link-type="propdesc" href="/grid/#propdef-grid-column-end" id="ref-for-propdef-grid-column-end④">grid-column-end</a> 属性定义一个网格项 <a data-link-type="dfn" href="/grid/#grid-item" id="ref-for-grid-item⑥③">grid item</a>的尺寸和位置, 通过向网格布局<a data-link-type="dfn" href="/grid/#grid-placement" id="ref-for-grid-placement②">grid placement</a>提供一条线, 一个跨度, 或者空(自动), 从而指定网格区域的<a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#inline-start" id="ref-for-inline-start">inline-start</a>, <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#block-start" id="ref-for-block-start">block-start</a>, <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#inline-end" id="ref-for-inline-end">inline-end</a>, 和 <a data-link-type="dfn" href="https://www.w3.org/TR/css-writing-modes-3/#block-end" id="ref-for-block-end">block-end</a>的边界线 .</p>
+        <p>值有以下含义:</p>
         <dl>
             <dt>
                 <dfn class="css" data-dfn-for="&lt;grid-line&gt;" data-dfn-type="value" data-export="" id="grid-placement-slot"><a class="production css" data-link-type="type" href="https://www.w3.org/TR/css3-values/#identifier-value" id="ref-for-identifier-value⑥">&lt;custom-ident&gt;</a><a class="self-link" href="/grid/#grid-placement-slot"></a></dfn>
